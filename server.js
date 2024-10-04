@@ -9,7 +9,7 @@ app.use(cors()); // Allow cross-origin requests
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000', // TODO: update origin for deployment
+    origin: 'https://axisbluffers.netlify.app/', // TODO: update origin for deployment
     methods: ['GET', 'POST']
   }
 });
